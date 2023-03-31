@@ -1,0 +1,12 @@
+.Cards {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    padding: 20px;
+    width: 300px;
+    background-color: rgb(255, 255, 255);
+    overflow-y: auto;
+    margin-top: 55px;
+    border-radius: 10px;
+  } 

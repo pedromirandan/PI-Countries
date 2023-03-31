@@ -1,0 +1,60 @@
+.Landing {
+  background-image: url(https://wallpaperaccess.com/full/2223123.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+#boton {
+  display: inline-block;
+  padding: 1rem 2rem;
+  margin-top: 2rem;
+  border-radius: 5px;
+  border:15px;
+  border-color: black;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: #4f0b0b;
+  color: #fff;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* #boton:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 3px #fff, 0 0 5px #4f0b0b, 0 0 8px #4f0b0b, 0 0 10px #4f0b0b, 0 0 13px #4f0b0b, 0 0 15px #4f0b0b;
+  background-color: #310707;
+  color: #fff;
+  transition: all 0.2s ease-in-out;
+} */
+
+#boton:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 3px #fff, 0 0 5px #4f0b0b, 0 0 8px #4f0b0b, 0 0 10px #4f0b0b, 0 0 13px #4f0b0b, 0 0 15px #4f0b0b;
+  background-color: #310707;
+  color: #fff;
+  cursor: pointer;
+}
+
+#boton:not(:hover) {
+  transform: scale(1);
+  box-shadow: none;
+}
+
+#boton:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+  background-color: #555;
+  color: #fff;
+  transition: all 0.2s ease-in-out;
+  animation-name: pulse;
+  animation-duration: 0.3s;
+}
+
+#welcome {
+  color: #ffffff;
+  text-shadow: 0 0 1px #000000, 0 0 2px #000000, 0 0 3px #000000, 0 0 5px #4f0b0b, 0 0 8px #4f0b0b, 0 0 10px #4f0b0b, 0 0 13px #4f0b0b, 0 0 15px #4f0b0b;
+}

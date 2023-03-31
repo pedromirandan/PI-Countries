@@ -1,0 +1,61 @@
+.Card {
+    margin-bottom: 30px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .Card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .Card h1 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .Card p {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 5px;
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: auto;
+    align-self: center;
+  }
+
+  /* .Card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 3px #fff, 0 0 5px #4f0b0b, 0 0 8px #4f0b0b, 0 0 10px #4f0b0b, 0 0 13px #4f0b0b, 0 0 15px #4f0b0b;
+    background-color: #310707;
+    color: #fff;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+  } */
+
+  .Card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 3px #fff, 0 0 5px #4f0b0b, 0 0 8px #4f0b0b, 0 0 10px #4f0b0b, 0 0 13px #4f0b0b, 0 0 15px #4f0b0b;
+    background-color: #310707;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  .Card:hover p {
+    color: #fff;
+  }
+
+  .Card:not(:hover) {
+    transform: scale(1);
+    box-shadow: none;
+  }
