@@ -1,0 +1,91 @@
+  .Country {
+    position: relative;
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #219ebc;
+    box-shadow: 0 0 15px #000000;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .Country img {
+    width: 60%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 15px #000000;
+  }
+  
+  .Country h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #1d3557;
+  }
+  
+  .Country p {
+    font-size: 24px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    color: #1d3557;
+    font-weight: bold;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .Country {
+      padding: 20px 10px;
+    }
+  
+    .Country h1 {
+      font-size: 28px;
+    }
+  
+    .Country p {
+      font-size: 20px;
+    }
+  }
+
+#exit {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  text-decoration: none;
+  padding: 10px 20px;
+  background-color: #c1121f;
+  color: #fff;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  border: 0px;
+  transition: all 0.2s ease-in-out;
+}
+
+#exit:hover {
+  color: #fff;
+  transform: scale(1.1);
+  box-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 3px #fff, 0 0 5px #4f0b0b, 0 0 8px #4f0b0b, 0 0 10px #4f0b0b, 0 0 13px #4f0b0b, 0 0 15px #4f0b0b;
+  background-color: #780000;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#exit:not(:hover) {
+  transform: scale(1);
+  box-shadow: none;
+}
+
+#exit:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+  background-color: #555;
+  color: #fff;
+  transition: all 0.2s ease-in-out;
+  animation-name: pulse;
+  animation-duration: 0.3s;
+}
+  

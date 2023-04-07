@@ -6,7 +6,7 @@ async function getCountries(req, res) {
         const result = await Countries.findAll();
         res.json(result)
     } catch (error) {
-        res.status(400).json({
+        res.status(404).json({
             "ERROR": error.message
         })
     }
@@ -18,7 +18,7 @@ async function getCountryByID(req, res) {
         const result = await Countries.findByPk(idPais, { include: Activities });
         res.json(result);
     } catch (error) {
-        res.status(400).json({
+        res.status(404).json({
             "ERROR": error.message
         })
     }
@@ -35,7 +35,7 @@ async function getCountryByQuery(req, res) {
         if (!result.length) throw {message: `El país requerido no existe (${name})`} 
         res.json(result)
     } catch (error) {
-        res.status(400).json({
+        res.status(404).json({
             "ERROR": error.message
         })
     }

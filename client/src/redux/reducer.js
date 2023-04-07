@@ -1,7 +1,10 @@
-import { GET_COUNTRIES } from "./actions";
+import { GET_ACTIVITIES, GET_COUNTRIES, SEARCH_COUNTRIES, SET_COUNTRIES, SORT_COUNTRIES } from "./actions";
 
 const initialState = {
-    countries: []
+    allCountries: [],
+    countries: [],
+    preFilterCountries: [],
+    allActivities: [],
 };
 
 const rootReducer = (state = initialState, action) => {
@@ -10,7 +13,36 @@ const rootReducer = (state = initialState, action) => {
         case GET_COUNTRIES:
             return {
                 ...state,
+                countries: action.payload,
+                allCountries: action.payload,
+                preFilterCountries: action.payload,
+            }
+
+        case SEARCH_COUNTRIES:
+            return {
+                ...state,
+                countries: action.payload,
+                preFilterCountries: action.payload
+            }
+
+        case SORT_COUNTRIES:
+                const { result, inputCountries } = action.payload;
+                return {
+                    ...state,
+                    countries: result,
+                    preFilterCountries: inputCountries
+                }
+
+        case SET_COUNTRIES:
+            return {
+                ...state,
                 countries: action.payload
+            }
+
+        case GET_ACTIVITIES:
+            return {
+                ...state,
+                allActivities: action.payload
             }
 
         default:

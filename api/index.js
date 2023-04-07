@@ -31,10 +31,10 @@ conn.sync({ force: true }).then(() => {
         Countries.create({
           ID: country.cca3,
           name: country.name.common,
-          flagImage: country.flags ? country.flags[0] : "No existe",
-          continent: country.continents ? country.continents[0] : "No existe",
-          capital: country.capital ? country.capital[0]: "No existe",
-          subregion: country.subregion ? country.subregion : "No existe",
+          flagImage: country.flags ? country.flags[0] : "-",
+          continent: country.continents ? country.continents[0] : "-",
+          capital: country.capital ? country.capital[0]: "-",
+          subregion: country.subregion ? country.subregion : "-",
           area: country.area,
           population: country.population
         })

@@ -1,14 +1,33 @@
-.Nav {
-  background-color: #0e0c0c;
+/* .Nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background-color: #023047;
   display: flex;
   padding: 10px 20px;
   flex-direction: row-reverse;
+} */
+
+.Nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 35px;
+  background-color: #023047;
+  display: flex;
+  padding: 10px 20px;
+  align-items: center;
+  z-index: 1;
+  justify-content: flex-end;
+  /* gap: 10px; */
 }
 
 .boton {
   padding: 10px 20px;
-  margin-left: 20px;
-  background-color: #4f0b0b;
+  margin-right: 30px;
+  background-color: #c1121f;
   color: #fff;
   border-radius: 5px;
   font-weight: bold;
@@ -18,11 +37,12 @@
 }
 
 .boton:hover {
+  color: #fff;
   transform: scale(1.1);
   box-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 3px #fff, 0 0 5px #4f0b0b, 0 0 8px #4f0b0b, 0 0 10px #4f0b0b, 0 0 13px #4f0b0b, 0 0 15px #4f0b0b;
-  background-color: #310707;
-  color: #fff;
+  background-color: #780000;
   cursor: pointer;
+  font-weight: bold;
 }
 
 .boton:not(:hover) {

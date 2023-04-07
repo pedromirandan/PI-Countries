@@ -1,12 +1,18 @@
 .Cards {
-    position: fixed;
-    top: 0;
-    right: 0;
-    height: 100vh;
-    padding: 20px;
-    width: 300px;
-    background-color: rgb(255, 255, 255);
-    overflow-y: auto;
-    margin-top: 55px;
-    border-radius: 10px;
-  } 
+  justify-content:center;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 30px;
+}
+
+.Cards div {
+  justify-content: flex-start;
+}
+
+.count {
+  max-width: 1200px;
+  margin: 0 auto;
+  font-weight: bold;
+}

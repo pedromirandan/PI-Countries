@@ -1,19 +1,19 @@
 import React from 'react'
 import "./Card.css"
+import { Link } from "react-router-dom";
 
 export default function Card(props) {
-  const { name, flagImage, continent, capital, subregion, area, population } = props.country;
+  const { name, flagImage, continent } = props.country;
+
   return (
     <>
-      <div className='Card'>
-        <h1>Nombre: {name}</h1>
+    <Link to={`/country/${props.detailID}`} className='Card'>
+      <div>
+        <h1>{name}</h1>
         <img src={flagImage} alt="country_image"></img>
-        <p>{continent}</p>
-        <p>{capital}</p>
-        <p>{subregion}</p>
-        <p>{area}</p>
-        <p>{population}</p>
+        <p>Continent: {continent}</p>
       </div>
+    </Link>
     </>
   )
 }

@@ -1,0 +1,56 @@
+#filters {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-between;
+    margin-top: 70px;
+  }
+  
+  #first {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+  }
+
+  #second {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+  }
+  
+  #filters label {
+    margin-right: 5px;
+  }
+  
+  #filters select {
+    margin: 5px;
+    padding: 5px;
+    width: 100px;
+  }
+  
+  #filters button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 5px;
+    cursor: pointer;
+  }
+  
+  #filters button:hover {
+    background-color: #3e8e41;
+  }
+  
+  #filters button:disabled {
+    background-color: #cccccc;
+    cursor: default;
+  }
+  
+  #filters button:disabled:hover {
+    background-color: #cccccc;
+  }
+  

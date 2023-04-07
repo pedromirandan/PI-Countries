@@ -3,10 +3,10 @@ const { Countries, Activities } = conn.models;
 
 async function getActivities(req, res) {
     try {
-      const result = await Activities.findAll();
+      const result = await Activities.findAll({include: Countries});
     res.json(result)  
     } catch (error) {
-        res.status(400).json({
+        res.status(404).json({
             "ERROR": error.message
         })
     }
@@ -27,7 +27,7 @@ async function postActivities(req, res) {
         }
         res.json(activity)
     } catch (error) {
-        res.status(400).json({
+        res.status(404).json({
             "ERROR": error.message
         })
     }

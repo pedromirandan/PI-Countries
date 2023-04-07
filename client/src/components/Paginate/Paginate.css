@@ -1,0 +1,28 @@
+.paginate {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.paginate p {
+    padding: 10px;
+}
+
+.paginate .button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.paginate .disabled {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    opacity: 0.6;
+    cursor: not-allowed;
+}
