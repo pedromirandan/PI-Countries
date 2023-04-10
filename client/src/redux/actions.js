@@ -61,7 +61,9 @@ export const sortCountries = (localState, inputCountries, reduxState, filter) =>
         });
 
       }
+      const { allCountries } = reduxState;
       const result = [...inputCountries]
+      inputCountries = [...allCountries];
 
       dispatch({ type: SORT_COUNTRIES, payload: { result, inputCountries } }); //DESPACHAMOS PRIMER FILTRO
 
@@ -82,13 +84,13 @@ export const sortCountries = (localState, inputCountries, reduxState, filter) =>
           dispatch({ type: SORT_COUNTRIES, payload: { result, inputCountries } }); //DESPACHAMOS 2 ACTIVITY
         }
       } else {
-          reduxState.allActivities.forEach((e) => e.name === activity ? targetActivity = e : null);
-          let { countries } = targetActivity;
-          const countriesIDs = countries.map((e) => e.ID)
-          const tempResult = [];
-          inputCountries.forEach((country) => {
-            if (countriesIDs.includes(country.ID)) tempResult.push(country)
-          })
+        reduxState.allActivities.forEach((e) => e.name === activity ? targetActivity = e : null);
+        let { countries } = targetActivity;
+        const countriesIDs = countries.map((e) => e.ID)
+        const tempResult = [];
+        inputCountries.forEach((country) => {
+          if (countriesIDs.includes(country.ID)) tempResult.push(country)
+        })
         const result = tempResult.filter((country) => country.continent === continent);
         console.log(result);
         dispatch({ type: SORT_COUNTRIES, payload: { result, inputCountries } }); //DESPACHAMOS 2 AMBOS
