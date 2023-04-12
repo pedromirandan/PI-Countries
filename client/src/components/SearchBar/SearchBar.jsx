@@ -37,7 +37,7 @@ export default function SearchBar(props) {
     <div>
       <form>
         <input className='input' placeholder='Country name' type='search' onChange={changeHandler}></input>
-        <button id='search' onClick={clickHandler}>SEARCH</button>
+        <button className='search-btn' onClick={clickHandler}>SEARCH</button>
       </form>
     </div>
   )

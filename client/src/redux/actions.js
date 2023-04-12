@@ -22,7 +22,6 @@ export const searchCountries = (input) => {
     axios.get(`http://localhost:3001/countries/name?name=${input}`)
       .then((response => {
         const { data } = response;
-        console.log(data);
         dispatch({ type: SEARCH_COUNTRIES, payload: data });
       }))
       .catch((error) => {
@@ -92,7 +91,6 @@ export const sortCountries = (localState, inputCountries, reduxState, filter) =>
           if (countriesIDs.includes(country.ID)) tempResult.push(country)
         })
         const result = tempResult.filter((country) => country.continent === continent);
-        console.log(result);
         dispatch({ type: SORT_COUNTRIES, payload: { result, inputCountries } }); //DESPACHAMOS 2 AMBOS
       }
     }

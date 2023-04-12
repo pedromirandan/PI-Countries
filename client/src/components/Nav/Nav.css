@@ -1,33 +1,45 @@
-/* .Nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 50px;
-  background-color: #023047;
-  display: flex;
-  padding: 10px 20px;
-  flex-direction: row-reverse;
-} */
-
 .Nav {
   position: fixed;
   top: 0;
   width: 100%;
   height: 35px;
-  background-color: #023047;
+  background-color: #007979;
   display: flex;
   padding: 10px 20px;
   align-items: center;
   z-index: 1;
   justify-content: flex-end;
-  /* gap: 10px; */
+}
+
+.log-out {
+  padding: 10px 20px;
+  margin-right: 30px;
+  background-color: #b32907;
+  color: #000;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  border: 0px;
+  transition: all 0.2s ease-in-out;
+}
+
+.log-out:hover {
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
+  color: #333;
+  transform: scale(1.1);
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.log-out:active {
+  transform: translateY(0);
+  transition: all 0.2s ease-in-out;
 }
 
 .boton {
   padding: 10px 20px;
-  margin-right: 30px;
-  background-color: #c1121f;
+  margin: 10px;
+  background-color: #009292;
   color: #fff;
   border-radius: 5px;
   font-weight: bold;
@@ -37,25 +49,14 @@
 }
 
 .boton:hover {
-  color: #fff;
-  transform: scale(1.1);
-  box-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 3px #fff, 0 0 5px #4f0b0b, 0 0 8px #4f0b0b, 0 0 10px #4f0b0b, 0 0 13px #4f0b0b, 0 0 15px #4f0b0b;
-  background-color: #780000;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
+  color: #333;
+  transform: scale(1.05);
   cursor: pointer;
   font-weight: bold;
 }
 
-.boton:not(:hover) {
-  transform: scale(1);
-  box-shadow: none;
-}
-
 .boton:active {
   transform: translateY(0);
-  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
-  background-color: #555;
-  color: #fff;
   transition: all 0.2s ease-in-out;
-  animation-name: pulse;
-  animation-duration: 0.3s;
 }

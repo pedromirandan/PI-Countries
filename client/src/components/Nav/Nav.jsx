@@ -9,7 +9,7 @@ export default function Nav(props) {
     <div className='Nav'>.
       <Link to="/activity/create"><button className='boton' id='form'>CREATE ACTIVITY</button></Link>
       <SearchBar className="SearchBar" homeState={homeState} />
-      <Link to="/"><button className='boton' id='logout'>LOG OUT</button></Link>
+      <Link to="/"><button className='log-out'>LOG OUT</button></Link>
     </div>
   )
 }

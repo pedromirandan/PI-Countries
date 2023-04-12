@@ -1,14 +1,13 @@
 .Card {
   margin-top: 30px;
-  color: #000000;
+  color: #002829;
   text-decoration: none;
-  box-shadow: 0 0 1000px #000000;
-  /* border: 1px solid #000000; */
-  /* border-radius: 5px; */
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
   padding: 10px;
   display: flex;
   flex-direction: column;
-  background-color: #219ebc;
+  border-radius: 8px;
+  background-color: #00C9C8;
   transition: all 0.2s ease-in-out;
   width: 15%;
 }
@@ -31,7 +30,7 @@
   font-size: 14px;
   line-height: 1.5;
   margin-bottom: 5px;
-  color: #000000;
+  color: #002829;
   text-decoration: none;
   font-weight: bold;
   margin-top: auto;
@@ -39,8 +38,8 @@
 }
 
 .Card:hover {
-  transform: scale(1.1);
-  box-shadow: 0 0 15px #000000;
+  transform: scale(1.05);
+  box-shadow: 0 0 10px #000000;
   background-color: #023047;
   cursor: pointer;
   color: #fff;

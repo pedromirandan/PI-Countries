@@ -42,9 +42,9 @@ export default function Paginate(props) {
 
     return (
         <div className='paginate'>
-            <button className={!(pageIndex === 0) ? "button" : "disabled"} value="previous" onClick={handleClick}>{"<--"}</button>
+            <button className={!(pageIndex === 0) ? "button" : "disabled"} value="previous" onClick={handleClick}>{"❮"}</button>
             <p>{pageIndex + 1}</p>
-            <button className={!(pageIndex === maxIndex) ? "button" : "disabled"} value="next" onClick={handleClick}>{"-->"}</button>
+            <button className={!(pageIndex === maxIndex) ? "button" : "disabled"} value="next" onClick={handleClick}>{"❯"}</button>
         </div>
     )
 }

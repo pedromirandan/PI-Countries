@@ -8,15 +8,6 @@
     padding: 10px;
 }
 
-.paginate .button {
-    background-color: #007bff;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
 .paginate .disabled {
     background-color: #007bff;
     color: #fff;
@@ -26,3 +17,42 @@
     opacity: 0.6;
     cursor: not-allowed;
 }
+
+.paginate .button {
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #009292;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    border: 0px;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .paginate .button:hover {
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
+    color: #333;
+    transform: scale(1.1);
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .paginate .button:active {
+    transform: translateY(0);
+    transition: all 0.2s ease-in-out;
+  }
+
+  .paginate .disabled {
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #009292;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    border: 0px;
+    transition: all 0.2s ease-in-out;
+    opacity: 0.6;
+    cursor: not-allowed;
+  }

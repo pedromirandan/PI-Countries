@@ -154,7 +154,7 @@ export default function Filters(props) {
         </select>
 
         <button onClick={() => clickHandler("second")}>FILTER</button>
-        <button onClick={() => resetHandler("second")}>CLEAR</button>
+        <button onClick={() => resetHandler("second")} className='clear'>CLEAR</button>
       </div>
 
       <div id='first'>
@@ -172,7 +172,7 @@ export default function Filters(props) {
           <option value="descendente">Descendente</option>
         </select>
         <button onClick={() => clickHandler("first")}>FILTER</button>
-        <button onClick={() => resetHandler("first")}>CLEAR</button>
+        <button onClick={() => resetHandler("first")} className='clear'>CLEAR</button>
       </div>
     </div>
   )

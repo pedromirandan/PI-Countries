@@ -163,12 +163,12 @@ export default function Form() {
 
                 <div className='name'>
                     <label>Name: </label>
-                    <input type='text' name='name' onChange={changeHandler}></input>
+                    <input placeholder='Activity name...' type='text' name='name' onChange={changeHandler}></input>
                     {error.nameError ? <span className='error'>{error.nameError}</span> : null}
                 </div>
 
                 <div className='difficulty'>
-                    <label>Dificultad: </label>
+                    <label>Difficulty: </label>
                     <label>1</label>
                     <input type="radio" name="difficulty" value="1" onChange={changeHandler}></input>
                     <label>2</label>
@@ -205,7 +205,7 @@ export default function Form() {
                         {state.selectedCountries.map((country) => {
                             return <li className="item" key={country}>
                                 <span className='item-name'>{country}</span>
-                                <button className="item-close" name="list" value={country} onClick={removeFromList}>X</button>
+                                <button className="item-close" name="list" value={country} onClick={removeFromList}>✖</button>
                             </li>
                         })}
 
@@ -220,7 +220,9 @@ export default function Form() {
                     {error.selectedCountriesError ? <span className='error'>{error.selectedCountriesError}</span> : null}
                 </div>
 
-                <button name="submit" type='submit' onClick={clickHandler}>CREATE ACTIVITY</button>
+                <div className="button-container">
+                    <button name="submit" type='submit' className='submit-btn' onClick={clickHandler}>CREATE ACTIVITY</button>
+                </div>
 
             </form>
         </div>
