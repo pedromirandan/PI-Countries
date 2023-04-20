@@ -133,17 +133,20 @@ export default function Form() {
         }
 
         if (!nameError && !difficultyError && !durationError && !seasonError && !selectedCountriesError) {
-            alert("The activity has been created successfully!")
             axios.post("http://localhost:3001/activities", {
                 "name": name,
                 "difficulty": difficulty,
                 "duration": duration,
                 "season": season,
                 "idPais": selectedCountriesIDs
+            }).then((response) => {
+                alert("The activity has been created successfully!")
+            }).catch((response) => {
+                alert(response.message)
             })
         }
         else {
-            alert("Comlete or correct all fields to create an activity!")
+            alert("Complete or correct all fields to create an activity!")
         }
     }
 
